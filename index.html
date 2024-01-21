@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="./src/scripts/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__info">
+        <figure class="header__logo">
+          <img src="#" alt="Logo de construelectric JV">
+        </figure>
+        <p class="header__name">Jhon Londoño</p>
+      </div>
+      <div class="hero">
+        <swiper-container slides-per-view="1" preload-images="false">
+          <swiper-slide>
+            <picture>
+              <source srcset="./src/assets/images/hero-1-480.avif" type="image/avif">
+              <source srcset="./src/assets/images/hero-1-1024.avif" type="image/avif" media="(min-width: 48rem)">
+              <source srcset="./src/assets/images/hero-1-480.webp" type="image/webp">
+              <source srcset="./src/assets/images/hero-1-1024.webp" type="image/webp" media="(min-width: 48rem)">
+              <source srcset="./src/assets/images/hero-1-1024.png" type="image/png" media="(min-width: 48rem)">
+              <img src="./src/assets/images/hero-1-480.png" class="hero__image">
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture>
+              <source srcset="./src/assets/images/hero-2-480.avif" type="image/avif">
+              <source srcset="./src/assets/images/hero-2-1024.avif" type="image/avif" media="(min-width: 48rem)">
+              <source srcset="./src/assets/images/hero-2-480.webp" type="image/webp">
+              <source srcset="./src/assets/images/hero-2-1024.webp" type="image/webp" media="(min-width: 48rem)">
+              <source srcset="./src/assets/images/hero-2-1024.png" type="image/png" media="(min-width: 48rem)">
+              <img src="./src/assets/images/hero-2-480.png" class="hero__image">
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture>
+              <source srcset="./src/assets/images/hero-3-480.avif" type="image/avif">
+              <source srcset="./src/assets/images/hero-3-1024.avif" type="image/avif" media="(min-width: 48rem)">
+              <source srcset="./src/assets/images/hero-3-480.webp" type="image/webp">
+              <source srcset="./src/assets/images/hero-3-1024.webp" type="image/webp" media="(min-width: 48rem)">
+              <source srcset="./src/assets/images/hero-3-1024.png" type="image/png" media="(min-width: 48rem)">
+              <img src="./src/assets/images/hero-3-480.png" class="hero__image">
+            </picture>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </header>
+  </body>
+</html>
