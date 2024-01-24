@@ -72,7 +72,10 @@
             <div class="hero__column hero__column--info">
               <h1 class="hero__heading">Construelectric JV LTDA</h1>
               <p class="hero__slogan">Innovación eléctrica, compromiso inquebrantable: Su futuro, nuestro compromiso.</p>
-              <button class="hero__button">Galería profesional</button>
+              <a class="hero__button button--positionAware" href="#gallery">
+                <span class="hero__buttonSpan"></span>
+                <span class="hero__button-text">Galería profesional</span>
+              </a>
             </div>
             <div class="hero__column">
               <div class="hero__column--contact">
@@ -97,14 +100,23 @@
               </div>
             </div>
             <div class="hero__socials">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a class="hero__social-link hero__social-link--Facebook" href="#" target="_blank" rel="noopener noreferrer">
                 <img src="/facebook-icon.svg" alt="Facebook" class="hero__social-icon">
+                <div class="hero__social-link-body">
+                  <p>Facebook perfil</p>
+                </div>
               </a>
-              <a href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
+              <a class="hero__social-link hero__social-link--WhatsApp" href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
                 <img src="/WhatsApp-icon.svg" alt="WhatsApp" class="hero__social-icon">
+                <div class="hero__social-link-body">
+                  <p>¡Contáctanos!</p>
+                </div>
               </a>
-              <a href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
+              <a class="hero__social-link hero__social-link--tel" href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
                 <img src="/phoneWithbg-icon.svg" alt="Teléfono" class="hero__social-icon">
+                <div class="hero__social-link-body">
+                  <p>+56 931116978</p>
+                </div>
               </a>
             </div>
         </div>
@@ -195,7 +207,11 @@
         </picture>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
+      <div class="gallery__header">
+        <h2 class="gallery__heading">Galería profesional</h2>
+        <p class="gallery__subtitle">Compromiso con la calidad</p>
+      </div>
       <swiper-container
         id="gallery"
         slides-per-view="3"
