@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
     <script src="./src/scripts/main.js" type="module"></script>
     <style>
       #gallery::part(button-prev) {
@@ -24,14 +29,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__info">
+      <div class="header__info container">
         <figure class="header__logo">
-          <img src="#" alt="Logo de construelectric JV">
+          <img src="#" alt="Logo de construelectric JV" width="40" height="40">
         </figure>
         <p class="header__name">Jhon Londoño</p>
       </div>
       <div class="hero">
         <swiper-container
+          id="heroSlider"
           slides-per-view="1"
           preload-images="false"
           autoplay-delay="4000"
@@ -40,74 +46,67 @@
           speed="1000"
           allow-touch-move="false"
         >
-          <swiper-slide>
+          <swiper-slide class="hero__slideImage">
             <picture>
-              <source srcset="./src/assets/images/hero-1-480.avif" type="image/avif" media="(max-width: 48rem)">
               <source srcset="./src/assets/images/hero-1-1024.avif" type="image/avif" >
-              <source srcset="./src/assets/images/hero-1-480.webp" type="image/webp" media="(max-width: 48rem)">
               <source srcset="./src/assets/images/hero-1-1024.webp" type="image/webp">
-              <source srcset="./src/assets/images/hero-1-1024.png" type="image/png">
-              <img src="./src/assets/images/hero-1-480.png" class="hero__image">
+              <img src="./src/assets/images/hero-1-1024.png" class="hero__image">
             </picture>
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide class="hero__slideImage">
             <picture>
-              <source srcset="./src/assets/images/hero-2-480.avif" type="image/avif" media="(max-width: 48rem)">
               <source srcset="./src/assets/images/hero-2-1024.avif" type="image/avif" >
-              <source srcset="./src/assets/images/hero-2-480.webp" type="image/webp" media="(max-width: 48rem)">
               <source srcset="./src/assets/images/hero-2-1024.webp" type="image/webp">
-              <source srcset="./src/assets/images/hero-2-1024.png" type="image/png">
-              <img src="./src/assets/images/hero-2-480.png" class="hero__image">
+              <img src="./src/assets/images/hero-2-1024.png" class="hero__image">
             </picture>
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide class="hero__slideImage">
             <picture>
-              <source srcset="./src/assets/images/hero-3-480.avif" type="image/avif" media="(max-width: 48rem)">
               <source srcset="./src/assets/images/hero-3-1024.avif" type="image/avif" >
-              <source srcset="./src/assets/images/hero-3-480.webp" type="image/webp" media="(max-width: 48rem)">
               <source srcset="./src/assets/images/hero-3-1024.webp" type="image/webp">
-              <source srcset="./src/assets/images/hero-3-1024.png" type="image/png">
-              <img src="./src/assets/images/hero-3-480.png" class="hero__image">
+              <img src="./src/assets/images/hero-3-1024.png" class="hero__image">
             </picture>
           </swiper-slide>
         </swiper-container>
-        <div class="hero__content">
-          <div class="hero__column hero__column--info">
-            <h1 class="hero__heading">Construelectric JV LTDA</h1>
-            <p class="hero__slogan">Innovación eléctrica, compromiso inquebrantable: Su futuro, nuestro compromiso.</p>
-            <button class="hero__button">Galería profesional</button>
-          </div>
-          <div class="hero__column hero__column--contact">
-            <div class="hero__contact-data">
-              <img src="/localization-icon.svg" class="hero__icon">
-              <p class="hero__contact-info">
-                Calle Santa Bernardita Casa 57, Ciudad la Unión Región de los Ríos
-              </p>
+        <div class="hero__content container">
+            <div class="hero__column hero__column--info">
+              <h1 class="hero__heading">Construelectric JV LTDA</h1>
+              <p class="hero__slogan">Innovación eléctrica, compromiso inquebrantable: Su futuro, nuestro compromiso.</p>
+              <button class="hero__button">Galería profesional</button>
             </div>
-            <div class="hero__contact-data">
-              <img src="/email-icon.svg" class="hero__icon">
-              <a class="hero__contact-info" href="mailto:construelectricjv@gmail.com">
-                construelectricjv@gmail.com
+            <div class="hero__column">
+              <div class="hero__column--contact">
+                <div class="hero__contact-data">
+                  <img src="/localization-icon.svg" class="hero__icon">
+                  <p class="hero__contact-info">
+                    Calle Santa Bernardita Casa 57, Ciudad la Unión Región de los Ríos
+                  </p>
+                </div>
+                <div class="hero__contact-data">
+                  <img src="/email-icon.svg" class="hero__icon">
+                  <a class="hero__contact-info" href="mailto:construelectricjv@gmail.com">
+                    construelectricjv@gmail.com
+                  </a>
+                </div>
+                <div class="hero__contact-data">
+                  <img src="/phoneNobg-icon.svg" class="hero__icon">
+                  <a class="hero__contact-info" href="tel:+56931116978">
+                    +56 931116978
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero__socials">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/facebook-icon.svg" alt="Facebook" class="hero__social-icon">
+              </a>
+              <a href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
+                <img src="/WhatsApp-icon.svg" alt="WhatsApp" class="hero__social-icon">
+              </a>
+              <a href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
+                <img src="/phoneWithbg-icon.svg" alt="Teléfono" class="hero__social-icon">
               </a>
             </div>
-            <div class="hero__contact-data">
-              <img src="/phoneNobg-icon.svg" class="hero__icon">
-              <a class="hero__contact-info" href="tel:+56931116978">
-                +56 931116978
-              </a>
-            </div>
-          </div>
-          <div class="hero__socials">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/facebook-icon.svg" alt="Facebook" class="hero__social-icon">
-            </a>
-            <a href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
-              <img src="/WhatsApp-icon.svg" alt="WhatsApp" class="hero__social-icon">
-            </a>
-            <a href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
-              <img src="/phoneWithbg-icon.svg" alt="Teléfono" class="hero__social-icon">
-            </a>
-          </div>
         </div>
       </div>
     </header>
@@ -213,21 +212,212 @@
         centered-slides="true"
       >
         <swiper-slide>
-          <div class="card">
-            <img src="https://i.imgur.com/UV35a5h.png" width="300" height="300" alt="hero 1">
-          </div>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image1-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image1-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image1-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image1-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image1-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image1-480.png" alt="" class="gallery__image">
+          </picture>
         </swiper-slide>
         <swiper-slide>
-          <div class="card">
-            <img src="https://i.imgur.com/OWayEi8.png" width="300" height="300" alt="hero 2">
-          </div>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image2-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image2-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image2-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image2-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image2-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image2-480.png" alt="" class="gallery__image">
+          </picture>
         </swiper-slide>
         <swiper-slide>
-          <div class="card">
-            <img src="https://i.imgur.com/rL7FgbK.png" width="300" height="300" alt="hero 3">
-          </div>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image3-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image3-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image3-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image3-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image3-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image3-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image4-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image4-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image4-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image4-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image4-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image4-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image5-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image5-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image5-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image5-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image5-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image5-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image6-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image6-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image6-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image6-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image6-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image6-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image7-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image7-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image7-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image7-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image7-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image7-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image8-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image8-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image8-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image8-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image8-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image8-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image9-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image9-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image9-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image9-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image9-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image9-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image10-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image10-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image10-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image10-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image10-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image10-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image11-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image11-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image11-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image11-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image11-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image11-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image12-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image12-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image12-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image12-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image12-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image12-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image13-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image13-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image13-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image13-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image13-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image13-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image14-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image14-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image14-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image14-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image14-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image14-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image15-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image15-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image15-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image15-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image15-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image15-480.png" alt="" class="gallery__image">
+          </picture>
+        </swiper-slide>
+        <swiper-slide>
+          <picture>
+            <source srcset="./src/assets/images/gallery/gallery-image16-480.avif" type="image/avif" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image16-1024.avif" type="image/avif" >
+            <source srcset="./src/assets/images/gallery/gallery-image16-480.webp" type="image/webp" media="(max-width: 48rem)">
+            <source srcset="./src/assets/images/gallery/gallery-image16-1024.webp" type="image/webp">
+            <source srcset="./src/assets/images/gallery/gallery-image16-1024.png" type="image/png">
+            <img src="./src/assets/images/gallery/gallery-image16-480.png" alt="" class="gallery__image">
+          </picture>
         </swiper-slide>
       </swiper-container>
     </section>
+    <footer class="footer">
+      <h2 class="footer__heading">
+        Construelectric JV LTDA
+      </h2>
+      <div class="footer__content">
+        <div class="footer__column footer__column--info">
+          <p class="footer__contact-info">
+            Calle Santa Bernardita Casa 57, Ciudad la Unión Región de los Ríos
+          </p>
+          <a class="footer__contact-info" href="mailto:construelectricjv@gmail.com">
+            construelectricjv@gmail.com
+          </a>
+          <a class="footer__contact-info" href="tel:+56931116978">
+            +56 931116978
+          </a>
+        </div>
+        <div class="footer__column footer__column--qr">
+          <div class="footer__qr-container">
+            <img src="/qr-oficios.png" alt="Certificación en oficios linea continuidad de estudios" class="footer__qr-image">
+            <p class="footer__qr-text">
+              Certificación en oficios linea continuidad de estudios
+            </p>
+          </div>
+          <div class="footer__qr-container">
+            <img src="/qr-instalador.png" alt="Certificación como instalador eléctrico" class="footer__qr-image">
+            <p class="footer__qr-text">
+              Certificación como instalador eléctrico
+            </p>
+          </div>
+        </div>
+        <div class="footer__column footer__column--socials">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/facebook-icon.svg" alt="Facebook" class="hero__social-icon">
+          </a>
+          <a href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
+            <img src="/WhatsApp-icon.svg" alt="WhatsApp" class="hero__social-icon">
+          </a>
+          <a href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
+            <img src="/phoneWithbg-icon.svg" alt="Teléfono" class="hero__social-icon">
+          </a>
+        </div> 
+      </div>
+      <p class="copy">
+        &copy; 2024 - Todos los derechos reservados
+      </p>
+    </footer>
   </body>
 </html>
