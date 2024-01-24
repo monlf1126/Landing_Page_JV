@@ -40,12 +40,20 @@ a {
   padding: 0 1rem;
 }
 
+@media screen and (min-width: 48rem) {
+    .container {
+      padding: 0;
+      width: 90%;
+      margin-inline: auto;
+    }
+}
+
 .header__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   
 }
 
@@ -61,6 +69,18 @@ a {
   color: var(--neutral-color-white);
 }
 
+@media screen and (min-width: 48rem) {
+    .hero {
+      height: 26.5625rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    .hero {
+      height: 35.875rem;
+    }
+}
+
 #heroSlider {
   position: relative;
   height: 100%;
@@ -74,16 +94,31 @@ a {
   grid-template-rows: repeat(2, 1fr);
 }
 
+@media screen and (min-width: 48rem) {
+   .hero__content {
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+   } 
+}
+
+@media screen and (min-width: 64rem) {
+    .hero__content {
+      grid-template-rows: initial;
+    }
+}
+
 .hero__slideImage {
   height: 100%;
 }
 
 .hero__slideImage picture {
   height: 100%;
+  width: 100%;
 }
 
 .hero__slideImage img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   filter: brightness(70%) saturate(150%); 
 }
@@ -94,9 +129,98 @@ a {
   flex: 1;
 }
 
+@media screen and (min-width: 48rem) {
+  .hero__column {
+    grid-row: 3/7;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .hero__column {
+    grid-row: auto;
+  }
+}
+
 .hero__column--info {
   align-self: center;
   text-shadow: 1px 4px 5.4px rgba(0, 0, 0, 0.50);
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__column--info {
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .hero__column--info {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__column--divider {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .hero__heading::before {
+    content: '';
+    width: 8px;
+    height: ;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__heading::before {
+    content: '';
+    width: 8px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .hero__column--divider {
+    height: auto;
+    padding-right: 4rem;
+  }
+}
+
+.hero__column--bluebg {
+  background-color: rgba(0, 32, 46, 0.50);
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__column--bluebg {
+    align-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: .5rem 1rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .hero__column--bluebg {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__column--contact {
+    align-self: center;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .hero__column--contact {
+    height: auto;
+  }
 }
 
 .hero__socials {
@@ -109,13 +233,19 @@ a {
   align-items: flex-end;
 }
 
+@media screen and (min-width: 48rem) {
+  .hero__socials {
+    right: -2rem;
+  }
+}
+
 .hero__social-link {
   display: flex;
   align-items: center;
   border-radius: 5555px;
 }
 
-.hero__social-link:hover .hero__social-body {
+.hero__social-link:hover .hero__social-link-body {
   max-width: 9.375rem;
 }
 
@@ -138,12 +268,24 @@ a {
   object-fit: cover;
 }
 
+@media screen and (min-width: 48rem) {
+  .hero__social-icon {
+    width: 1.50rem;
+  }
+}
+
 .hero__social-link-body {
   max-width: 0;
   overflow: hidden;
   max-height: 2.5rem;
-  transition: max-width 250ms ease;
+  transition: max-width 400ms ease-in-out;
   white-space: nowrap;
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__social-link-body {
+    max-height: 1.5rem;
+  }
 }
 
 .hero__social-link-body p {
@@ -153,6 +295,19 @@ a {
 .hero__heading {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .hero__heading--span {
+    display: block;
+  }
 }
 
 .hero__slogan {
@@ -198,11 +353,6 @@ a {
   position: relative;
   z-index: 2;
   transition: color 200ms 50ms ease-in-out;
-}
-
-.hero__column--contact {
-  background-color: rgba(0, 32, 46, 0.50);
-  padding: 1.5rem;
 }
 
 .hero__contact-data {
