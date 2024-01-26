@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Construelectric JV LTDA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
     <header class="header">
       <div class="header__info container">
         <figure class="header__logo">
-          <img src="#" alt="Logo de construelectric JV" width="40" height="40">
+          <img src="#" alt="Logo de Construelectric JV" width="40" height="40">
         </figure>
         <p class="header__name">Jhon Londoño</p>
       </div>
@@ -71,11 +71,11 @@
         <div class="hero__content container">
             <div class="hero__column hero__column--info">
               <div class="hero__column--divider">
-                <h1 class="hero__heading">Construelectric JV <span class="hero__heading--span">LTDA</span></h1>
+                <h1 class="hero__heading yellow-bar">Construelectric JV <span class="hero__heading--span">LTDA</span></h1>
                 <p class="hero__slogan">Innovación eléctrica, compromiso inquebrantable: Su futuro, nuestro compromiso.</p>
               </div>
-              <a class="hero__button button--positionAware" href="#gallery">
-                <span class="hero__buttonSpan"></span>
+              <a class="hero__button button--positionAware" href="#gallerySection">
+                <span class="hero__button-span"></span>
                 <span class="hero__button-text">Galería profesional</span>
               </a>
             </div>
@@ -125,11 +125,13 @@
       </div>
     </header>
     <main class="main">
-      <div class="main__services">
-        <h2 class="main__heading">NUESTROS SERVICIOS</h2>
-        <p class="main__body">CONSIGUE LO MEJOR EN <span class="main__body--span">SERVICIOS ELECTRICOS</span></p>
+      <div class="main__header">
+        <div class="main__header-content container">
+          <h2 class="main__heading">NUESTROS SERVICIOS</h2>
+          <p class="main__description">CONSIGUE LO MEJOR EN <span class="main__description--span">SERVICIOS <span class="line-break">ELÉCTRICOS</span></span></p>
+        </div>
       </div>
-      <div class="main__cards">
+      <div class="main__cards container">
         <div class="service-card">
           <figure class="service-card__figure">
             <img src="/disenoyconstruccion-icon.svg" class="service-card__image">
@@ -139,7 +141,7 @@
               Diseño y construcción
             </h3>
             <p class="service-card__body">
-              Tableros eltricos, fuerza y control
+              Tableros eléctricos, fuerza y control
             </p>
           </div>
         </div> <!-- service card -->
@@ -171,7 +173,7 @@
         </div> <!-- service card -->
       </div>
     </main>
-    <section class="about-us">
+    <section class="about-us container">
       <div class="about-us__column">
         <picture>
           <source srcset="./src/assets/images/blueprints-894779-480.avif" type="image/avif" media="(max-width: 48rem)">
@@ -179,9 +181,9 @@
           <source srcset="./src/assets/images/blueprints-894779-480.webp" type="image/webp" media="(max-width: 48rem)">
           <source srcset="./src/assets/images/blueprints-894779-1024.webp" type="image/webp">
           <source srcset="./src/assets/images/blueprints-894779-1024.png" type="image/png">
-          <img src="./src/assets/images/blueprints-894779-480.png" class="hero__image">
+          <img src="./src/assets/images/blueprints-894779-480.png" class="about-us__image">
         </picture>
-        <div class="about-us__content about-us__content--vision">
+        <div class="about-us__content about-us__content--vision yellow-bar">
           <h3 class="about-us__heading">
             Nuestra Visión
           </h3>
@@ -191,7 +193,7 @@
         </div>
       </div>
       <div class="about-us__column">
-        <div class="about-us__content about-us__content--mision">
+        <div class="about-us__content about-us__content--mision yellow-bar">
           <h3 class="about-us__heading">
             Nuestra Misión
           </h3>
@@ -205,191 +207,191 @@
           <source srcset="./src/assets/images/lightbulb-5352822-480.webp" type="image/webp" media="(max-width: 48rem)">
           <source srcset="./src/assets/images/lightbulb-5352822-1024.webp" type="image/webp">
           <source srcset="./src/assets/images/lightbulb-5352822-1024.png" type="image/png">
-          <img src="./src/assets/images/lightbulb-5352822-480.png" class="hero__image">
+          <img src="./src/assets/images/lightbulb-5352822-480.png" class="about-us__image about-us__image--second">
         </picture>
       </div>
     </section>
-    <section class="gallery" id="gallery">
-      <div class="gallery__header">
-        <h2 class="gallery__heading">Galería profesional</h2>
-        <p class="gallery__subtitle">Compromiso con la calidad</p>
+    <section class="gallery" id="gallerySection">
+      <div class="gallery__header container">
+        <div class="">
+          <h2 class="gallery__heading">Galería<br />profesional</h2>
+          <p class="gallery__subtitle">Compromiso con la calidad</p>
+        </div>
       </div>
-      <swiper-container
-        id="gallery"
-        slides-per-view="3"
-        space-between="20"
-        navigation="true"
-        pagination="true"
-        effect="coverflow"
-        coverflow-effect-rotate="10"
-        coverflow-effect-stretch="0"
-        coverflow-effect-depth="100"
-        coverflow-effect-modifier="1"
-        coverflow-effect-slide-shadows="false"
-        grab-cursor="true"
-        centered-slides="true"
-      >
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image1-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image1-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image1-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image1-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image1-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image1-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image2-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image2-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image2-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image2-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image2-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image2-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image3-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image3-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image3-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image3-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image3-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image3-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image4-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image4-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image4-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image4-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image4-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image4-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image5-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image5-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image5-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image5-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image5-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image5-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image6-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image6-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image6-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image6-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image6-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image6-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image7-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image7-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image7-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image7-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image7-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image7-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image8-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image8-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image8-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image8-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image8-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image8-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image9-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image9-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image9-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image9-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image9-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image9-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image10-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image10-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image10-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image10-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image10-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image10-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image11-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image11-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image11-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image11-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image11-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image11-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image12-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image12-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image12-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image12-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image12-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image12-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image13-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image13-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image13-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image13-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image13-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image13-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image14-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image14-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image14-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image14-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image14-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image14-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image15-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image15-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image15-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image15-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image15-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image15-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-        <swiper-slide>
-          <picture>
-            <source srcset="./src/assets/images/gallery/gallery-image16-480.avif" type="image/avif" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image16-1024.avif" type="image/avif" >
-            <source srcset="./src/assets/images/gallery/gallery-image16-480.webp" type="image/webp" media="(max-width: 48rem)">
-            <source srcset="./src/assets/images/gallery/gallery-image16-1024.webp" type="image/webp">
-            <source srcset="./src/assets/images/gallery/gallery-image16-1024.png" type="image/png">
-            <img src="./src/assets/images/gallery/gallery-image16-480.png" alt="" class="gallery__image">
-          </picture>
-        </swiper-slide>
-      </swiper-container>
+      <div class="swiperElementContainer">
+        <swiper-container
+          id="gallerySwiper"
+          init="false"
+        >
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image1-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image1-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image1-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image1-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image1-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image1-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image2-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image2-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image2-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image2-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image2-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image2-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image3-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image3-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image3-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image3-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image3-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image3-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image4-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image4-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image4-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image4-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image4-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image4-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image5-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image5-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image5-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image5-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image5-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image5-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image6-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image6-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image6-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image6-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image6-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image6-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image7-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image7-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image7-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image7-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image7-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image7-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image8-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image8-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image8-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image8-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image8-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image8-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image9-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image9-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image9-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image9-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image9-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image9-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image10-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image10-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image10-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image10-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image10-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image10-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image11-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image11-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image11-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image11-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image11-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image11-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image12-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image12-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image12-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image12-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image12-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image12-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image13-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image13-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image13-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image13-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image13-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image13-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image14-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image14-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image14-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image14-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image14-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image14-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image15-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image15-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image15-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image15-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image15-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image15-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+          <swiper-slide>
+            <picture class="gallery__picture">
+              <source srcset="./src/assets/images/gallery/gallery-image16-480.avif" type="image/avif" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image16-1024.avif" type="image/avif" >
+              <source srcset="./src/assets/images/gallery/gallery-image16-480.webp" type="image/webp" media="(max-width: 48rem)">
+              <source srcset="./src/assets/images/gallery/gallery-image16-1024.webp" type="image/webp">
+              <source srcset="./src/assets/images/gallery/gallery-image16-1024.png" type="image/png">
+              <img src="./src/assets/images/gallery/gallery-image16-480.png" alt="" class="gallery__image" >
+            </picture>
+          </swiper-slide>
+        </swiper-container>
+        <div class="gallery-slider-control gallery-prevEl">
+          <img src="./src/assets/images/galleryLeftArrow.svg">
+        </div>
+        <div class="gallery-slider-control gallery-nextEl">
+          <img src="./src/assets/images/galleryRightArrow.svg">
+        </div>
+        <div class="gallery-pagination"></div>
+      </div>
     </section>
     <footer class="footer">
       <h2 class="footer__heading">

@@ -2,6 +2,62 @@ import { register } from "swiper/element/bundle"
 
 register()
 
+const gallerySwiperEl = document.getElementById('gallerySwiper');
+
+const gallerySwiperParams = {
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  navigation: {
+    enabled: true,
+    prevEl: '.gallery-prevEl',
+    nextEl: '.gallery-nextEl'
+  },
+  pagination: {
+    enabled: true,
+    el: '.gallery-pagination',
+    clickable: true,
+    renderBullet: function (i, cls) {
+      return `<span class="dot swiper-pagination-bullet"></span>`
+    }
+  },
+  autoplay: {
+    enabled: false, // TODO: Define if autoplay should be enabled
+    delay: 4000,
+    pauseOnMouseEnter: true,
+
+  },
+  speed: 1000,
+  grabCursor: true,
+  spaceBetween: "-20",
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 10,
+    stretch: 0,
+    depth: 150,
+    modifier: 1,
+    slideShadows: false,
+    stretch: 50,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 150,
+    }
+  },
+  on: {
+    init() {
+
+    }
+  }
+}
+
+Object.assign(gallerySwiperEl, gallerySwiperParams);
+
+gallerySwiperEl.initialize();
+
 const getButtonProps = (button) => {
   const buttonRect = button.getBoundingClientRect();
 
