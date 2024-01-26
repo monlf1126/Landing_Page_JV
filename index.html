@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="uBNHM5DC1qfPpCffI_cy73P7liLmlrNgAAmxjmHNhlY" />
     <title>Construelectric JV LTDA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +30,7 @@
           centered-slides="true"
           speed="1000"
           allow-touch-move="false"
+          aria-hidden="true"
         >
           <swiper-slide class="hero__slideImage">
             <picture>
@@ -396,16 +398,20 @@
           </div>
           <div class="footer__column footer__column--qr">
             <div class="footer__qr-container">
-              <img src="/qr-oficios.png" alt="Certificación en oficios linea continuidad de estudios" class="footer__qr-image">
-              <p class="footer__qr-text">
-                Certificación en oficios linea continuidad de estudios
-              </p>
+              <a href="https://sistemas.sence.cl/valcert/Home/Validacion?guid=D3B681CA-1A87-4384-A249-0DC3E5EFDCE1" target="_blank" rel="noreferrer noopener">
+                <img src="/qr-oficios.png" alt="Certificación en oficios linea continuidad de estudios" class="footer__qr-image">
+                <p class="footer__qr-text">
+                  Certificación en oficios linea continuidad de estudios
+                </p>
+              </a>
             </div>
             <div class="footer__qr-container">
-              <img src="/qr-instalador.png" alt="Certificación como instalador eléctrico" class="footer__qr-image">
-              <p class="footer__qr-text">
-                Certificación como instalador eléctrico
-              </p>
+              <a href="https://wlhttp.sec.cl/rnii/public/licencia/qr?o=bc3d0a0a0c442470e57c86c1b2ec1423" target="_blank" rel="noreferrer noopener">
+                <img src="/qr-instalador.png" alt="Certificación como instalador eléctrico" class="footer__qr-image">
+                <p class="footer__qr-text">
+                  Certificación como instalador eléctrico
+                </p>
+              </a>
             </div>
           </div>
           <div class="footer__column footer__column--socials">
@@ -421,7 +427,7 @@
           </div> 
         </div>
         <p class="copy">
-          &copy; 2024 - Todos los derechos reservados
+          &copy; <span id="copyYear"></span> - Todos los derechos reservados
         </p>
       </div>
     </footer>

@@ -114,3 +114,8 @@ applyButtonsVariables();
 window.addEventListener('resize', () => {
   applyButtonsVariables();
 });
+
+const copyYearEl = document.getElementById('copyYear');
+const currentYear = new Date().getFullYear()
+
+copyYearEl.textContent = currentYear;

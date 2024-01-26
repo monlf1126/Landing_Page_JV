@@ -527,14 +527,6 @@ a {
   }
 }
 
-.service-card__image {
-  transition: filter 200ms ease-in-out;
-}
-
-.service-card:hover .service-card__image {
-  filter: drop-shadow(0px 0px 5px #fdd03b) /* TODO: Reconsider the usage of this filter */
-}
-
 @media screen and (min-width: 48rem) {
   .service-card__content {
     height: 100%;
