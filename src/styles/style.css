@@ -203,10 +203,10 @@ a {
   .hero__heading {
     line-height: 1;
     margin-bottom: 1rem;
-    position: relative;
   }
 
   .hero__heading::before {
+    display: block;
     left: -1.44rem;
   }
 }
