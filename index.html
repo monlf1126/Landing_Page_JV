@@ -10,22 +10,6 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <script src="./src/scripts/main.js" type="module"></script>
-    <style>
-      #gallery::part(button-prev) {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        background-color: #1b1b1b;
-      }
-
-      .service-card__image {
-        transition: filter 200ms ease-in-out;
-      }
-
-      .service-card:hover .service-card__image {
-        filter: drop-shadow(0px 0px 5px #fdd03b)
-      }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -394,50 +378,52 @@
       </div>
     </section>
     <footer class="footer">
-      <h2 class="footer__heading">
-        Construelectric JV LTDA
-      </h2>
-      <div class="footer__content">
-        <div class="footer__column footer__column--info">
-          <p class="footer__contact-info">
-            Calle Santa Bernardita Casa 57, Ciudad la Unión Región de los Ríos
-          </p>
-          <a class="footer__contact-info" href="mailto:construelectricjv@gmail.com">
-            construelectricjv@gmail.com
-          </a>
-          <a class="footer__contact-info" href="tel:+56931116978">
-            +56 931116978
-          </a>
-        </div>
-        <div class="footer__column footer__column--qr">
-          <div class="footer__qr-container">
-            <img src="/qr-oficios.png" alt="Certificación en oficios linea continuidad de estudios" class="footer__qr-image">
-            <p class="footer__qr-text">
-              Certificación en oficios linea continuidad de estudios
+      <div class="container">
+        <div class="footer__content">
+          <h2 class="footer__heading yellow-bar">
+            Construelectric JV LTDA
+          </h2>
+          <div class="footer__column footer__column--info">
+            <p class="footer__contact-info">
+              Calle Santa Bernardita Casa 57, Ciudad la Unión Región de los Ríos
             </p>
+            <a class="footer__contact-info" href="mailto:construelectricjv@gmail.com">
+              construelectricjv@gmail.com
+            </a>
+            <a class="footer__contact-info" href="tel:+56931116978">
+              +56 931116978
+            </a>
           </div>
-          <div class="footer__qr-container">
-            <img src="/qr-instalador.png" alt="Certificación como instalador eléctrico" class="footer__qr-image">
-            <p class="footer__qr-text">
-              Certificación como instalador eléctrico
-            </p>
+          <div class="footer__column footer__column--qr">
+            <div class="footer__qr-container">
+              <img src="/qr-oficios.png" alt="Certificación en oficios linea continuidad de estudios" class="footer__qr-image">
+              <p class="footer__qr-text">
+                Certificación en oficios linea continuidad de estudios
+              </p>
+            </div>
+            <div class="footer__qr-container">
+              <img src="/qr-instalador.png" alt="Certificación como instalador eléctrico" class="footer__qr-image">
+              <p class="footer__qr-text">
+                Certificación como instalador eléctrico
+              </p>
+            </div>
           </div>
+          <div class="footer__column footer__column--socials">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="/facebook-icon.svg" alt="Facebook" class="footer__social-icon">
+            </a>
+            <a href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
+              <img src="/WhatsApp-icon.svg" alt="WhatsApp" class="footer__social-icon">
+            </a>
+            <a href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
+              <img src="/phoneWithbg-icon.svg" alt="Teléfono" class="footer__social-icon">
+            </a>
+          </div> 
         </div>
-        <div class="footer__column footer__column--socials">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img src="/facebook-icon.svg" alt="Facebook" class="hero__social-icon">
-          </a>
-          <a href="https://wa.me/56931116978?text=%C2%A1Hola%21%20Estoy%20interesado%2Fa%20en%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20construelectric%20JA%20LTDA.%20%C2%BFPueden%20proporcionarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F" target="_blank" rel="noopener noreferrer">
-            <img src="/WhatsApp-icon.svg" alt="WhatsApp" class="hero__social-icon">
-          </a>
-          <a href="tel:+56931116978" target="_blank" rel="noopener noreferrer">
-            <img src="/phoneWithbg-icon.svg" alt="Teléfono" class="hero__social-icon">
-          </a>
-        </div> 
+        <p class="copy">
+          &copy; 2024 - Todos los derechos reservados
+        </p>
       </div>
-      <p class="copy">
-        &copy; 2024 - Todos los derechos reservados
-      </p>
     </footer>
   </body>
 </html> 
