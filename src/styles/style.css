@@ -320,6 +320,11 @@ a {
   margin-bottom: 1rem;
 }
 
+.hero__image {
+  position: relative;
+  z-index: 2222222;
+}
+
 .hero__icon {
   flex-basis: 1.875rem;
   max-height: 1.875rem;
@@ -556,6 +561,7 @@ a {
 
 @media screen and (min-width: 64rem) {
   .service-card__body {
+
     font-size: 1.125rem;
   }
 }
