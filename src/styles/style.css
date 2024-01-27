@@ -36,6 +36,12 @@ a {
   font-family: inherit;
 }
 
+.logo-provisional {
+  text-transform: uppercase;
+  font-family: var(--font-roboto);
+  color: var(--primary-color-darkBlue);
+}
+
 .container {
   padding: 0 1rem;
   max-width: 1320px;
@@ -78,6 +84,12 @@ a {
   font-size: 1.125rem;
   font-family: var(--font-roboto);
   color: var(--primary-color-darkBlue);
+}
+
+@media screen and (min-width: 20rem) {
+  .header__name {
+    font-size: .8rem;
+  }
 }
 
 .hero {
@@ -283,6 +295,7 @@ a {
 @media screen and (min-width: 64rem) {
   .hero__column--contact {
     height: auto;
+    justify-self: end;
   }
 }
 
