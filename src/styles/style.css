@@ -374,7 +374,7 @@ a {
 }
 
 .hero__social-icon {
-  width: 2.5rem;
+  width: 2rem;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
