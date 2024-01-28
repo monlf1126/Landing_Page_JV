@@ -36,12 +36,6 @@ a {
   font-family: inherit;
 }
 
-.logo-provisional {
-  text-transform: uppercase;
-  font-family: var(--font-roboto);
-  color: var(--primary-color-darkBlue);
-}
-
 .container {
   padding: 0 1rem;
   max-width: 1320px;
@@ -63,6 +57,26 @@ a {
   background-color: var(--secondary-color-brightYellow);
 }
 
+.underline {
+  position: relative;
+  overflow: visible;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8%;
+  left: 0;
+  background-color: currentColor;
+  height: 1px;
+  width: 0px;
+  transition: width 200ms ease-in-out;
+}
+
+.underline:hover::after {
+  width: 100%;
+}
+
 @media screen and (min-width: 48rem) {
   .container {
     padding: 0;
@@ -77,18 +91,19 @@ a {
   align-items: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  
+  gap: 1.5rem;
 }
 
 .header__name {
-  font-size: 1.125rem;
+  font-size: .8rem;
   font-family: var(--font-roboto);
   color: var(--primary-color-darkBlue);
+  width: min-content;
 }
 
-@media screen and (min-width: 20rem) {
+@media screen and (min-width: 23.4375rem) {
   .header__name {
-    font-size: .8rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -920,6 +935,10 @@ a {
   .footer__heading {
     font-size: 3rem;
   }
+}
+
+.footer__contact-info {
+  width: fit-content;
 }
 
 .footer__contact-info:not(:last-child) {
