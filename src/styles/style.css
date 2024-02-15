@@ -62,20 +62,24 @@ a {
   overflow: visible;
 }
 
-.underline::after {
-  content: '';
-  position: absolute;
-  bottom: -8%;
-  left: 0;
-  background-color: currentColor;
-  height: 1px;
-  width: 0px;
-  transition: width 200ms ease-in-out;
+@media screen and (min-width: 48rem) {
+  .underline::after {
+    content: '';
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    border-top: 2px dashed hsl(0, 0%, 76%);
+    height: 1px;
+    width: 100%;
+    transition: width 200ms ease-in-out;
+    pointer-events: none;
+  }
+  
+  .underline:hover::after {
+    width: 0;
+  }
 }
 
-.underline:hover::after {
-  width: 100%;
-}
 
 @media screen and (min-width: 48rem) {
   .container {
@@ -362,6 +366,11 @@ a {
   flex: 1;
 }
 
+.hero__contact-info-text {
+  display: block;
+  width: fit-content;
+}
+
 .hero__socials {
   position: absolute;
   bottom: 0.75rem;
@@ -397,14 +406,22 @@ a {
   border-radius: 0 5555px 5555px 0;
 }
 
-.hero__social-link--tel {
-  background-color: #4a9396;
+.hero__social-link--Instagram {
+  border-radius: 4px;
 }
 
 .hero__social-icon {
   width: 2rem;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.instagram-bg {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FF8C00);
+}
+
+.hero__social-link--Instagram .hero__social-icon {
+  padding: 3px;
 }
 
 @media screen and (min-width: 48rem) {
@@ -1020,6 +1037,15 @@ a {
     grid-column: 3 / 4;
     flex-direction: column;
   }
+}
+
+.footer__social-icon {
+  max-width: 1.84rem;
+}
+
+.footer__social-icon--Instagram {
+  border-radius: 5555px;
+  overflow: visible;
 }
 
 @media screen and (min-width: 48rem) {
