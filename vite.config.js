@@ -1,4 +1,14 @@
+import autoprefixer from 'autoprefixer';
+import { defineConfig } from 'vite';
+
 /** @type {import('vite').UserConfig} */
-export default {
-  base: '/'
-}
+export default defineConfig({
+  base: '/',
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer({})
+      ]
+    }
+  }
+})

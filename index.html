@@ -53,7 +53,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" defer>
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <meta name="theme-color" id="theme-color" content="#D9D9D9">
@@ -76,7 +76,7 @@
     <meta property="og:image" content="https://construelectricjv.com/logo300x200.jpg">
     <meta property="og:url" content="https://construelectricjv.com/">
     <!-- End open graph -->
-    <script src="./src/scripts/main.js" type="module"></script>
+    <script defer src="./src/scripts/main.js" type="module"></script>
   </head>
   <body>
     <header class="header">
@@ -134,7 +134,7 @@
             <div class="hero__column hero__column--contact">
               <div class="hero__column--bluebg">
                 <div class="hero__contact-data">
-                  <img src="/localization-icon.svg" class="hero__icon">
+                  <img src="/localization-icon.svg" alt="" class="hero__icon">
                   <a class="hero__contact-info underline" href="https://www.google.com/maps/search/?api=1&query=Sta.+Bernardita+57,+5220121+La+Unión,+Los+Ríos,+Chile&query_place_id=ChIJFWaS-dRqFpYRxUfwT6Wlhgk" target="_blank" rel="noopener noreferrer">
                     Sta Bernardita 57 La Unión región de Los Ríos, Chile
                   </a>
@@ -277,6 +277,9 @@
         </div>
       </div>
       <div class="swiperElementContainer">
+        <noscript>
+          <p>La galería requiere activar el JavaScript para funcionar adecuadamente.</p>
+        </noscript>
         <swiper-container
           id="gallerySwiper"
           init="false"
